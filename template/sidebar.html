@@ -4,7 +4,7 @@
     </div>
 </div>
 <div class="widget sidebar-widget widget_recent_entries">
-    <h3 class="widgettitle">Blog</h3>
+    <h3 class="widgettitle"><a href="/blog">Blog</a></h3>
     <ul>
         {{#each (limit (sort (list-pages "/20.*") by="date" reverse=true) count=8)}}
         <li><a href="{{url}}">{{ title }}</a></li>
