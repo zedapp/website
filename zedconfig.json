@@ -1,0 +1,6 @@
+{
+    "preferences": {
+        "gotoExclude": ["/out/*"]
+    },
+    "packages": ["gh:zefhemel/zcms"]
+}

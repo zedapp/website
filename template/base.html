@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link rel='stylesheet' id='rtp-google-font-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' type='text/css' media='all' />
+        <link rel="stylesheet" href="/css/style.css" type="text/css" media='all'/>
+        <link rel="stylesheet" href="/css/zedapp.css" type="text/css" media='all'/>
+    </head>
+    <body class="home page page-id-2 page-template-default logged-in admin-bar no-customize-support chrome osx">
+        <div id="main-wrapper" class="rtp-main-wrapper">
+            <div id="header-wrapper" class="rtp-header-wrapper rtp-section-wrapper">
+                <header id="header" class="row rtp-section-container" role="banner">
+                    <div class="rtp-header large-12 columns rtp-full-width-grid ">
+                        <nav id="rtp-primary-menu" role="navigation" class="rtp-nav-wrapper rtp-mobile-nav">
+                            {{#call-template "menu.html" url=url}}{{/call-template}}
+                        </nav>
+                        <div class="rtp-logo-container clearfix">
+                             <h1 class="rtp-site-logo"><a href="/" title="Zed"><img alt="Zed" height="100" width="100" src="/img/zed-small.png" /></a></h1>
+
+                             <h3 class="tagline">Zed &#8212; Rethinking Code Editing</h3>
+
+                        </div>
+                        <hr />
+                    </div>
+                </header>
+            </div>
+            <div id="content-wrapper" class="rtp-content-wrapper rtp-section-wrapper">
+                <div class="row rtp-section-container">
+                    <section id="content" role="main" class="rtp-content-section large-8 columns rtp-singular">
+                        <div class="post-content">{{{ content }}}</div>
+                    </section>
+                    <aside id="sidebar" class="rtp-sidebar-section large-4 columns" role="complementary">
+                        <div class="rtp-sidebar-inner-wrapper">
+                            {{#call-template "sidebar.html"}}{{/call-template}}
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            <div class="row rtp-section-container rtp-footer-separator">
+                <div class="large-12 columns rtp-full-width-grid">
+                    <hr />
+                </div>
+            </div>
+            <footer id="footer-wrapper" role="contentinfo" class="clearfix rtp-footer-wrapper rtp-section-wrapper">
+                <div id="footer" class="rtp-footer rtp-section-container row">
+                    <div class="rtp-footer-section large-12 columns rtp-full-width-grid">
+                        <p>&copy; 2014 - Zed <em>Based on <a role="link" target="_blank" href="https://rtcamp.com/rtpanel/" class="rtp-common-link" title="rtPanel WordPress Theme Framework">rtPanel Theme Framework</a>.</em>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!--Analytics-->
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-58112-10', 'zedapp.org');
+        ga('send', 'pageview');
+        </script>
+        <script type='text/javascript' src='/js/rtp.js'></script>
+    </body>
+</html>

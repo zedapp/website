@@ -1,0 +1,7 @@
+{{#call-template "base.html" title=title}}
+{{ markdown content }}
+{{#each (limit (sort (list-pages "/blog/.*") by="date" reverse=true) count=20)}}
+<h1><a href="{{url}}">{{ title }}</a></h1>
+{{ markdown content }}
+{{/each}}
+{{/call-template}}

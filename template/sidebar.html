@@ -1,0 +1,29 @@
+<div class="widget sidebar-widget widget_text">
+    <div class="textwidget">
+        <a href="/download" class="install-button">Download</a>
+    </div>
+</div>
+<div class="widget sidebar-widget widget_recent_entries">
+    <h3 class="widgettitle">Blog</h3>
+    <ul>
+        {{#each (limit (sort (list-pages "/20.*") by="date" reverse=true) count=8)}}
+        <li><a href="{{url}}">{{ title }}</a></li>
+        {{/each}}
+    </ul>
+</div>
+<div class="widget sidebar-widget widget_text">
+     <h3 class="widgettitle">Support Zed</h3>
+
+    <div class="textwidget">
+        <script data-gittip-username="zefhemel" src="//gttp.co/v1.js"></script>
+    </div>
+</div>
+<div class="widget sidebar-widget widget_text">
+     <h3 class="widgettitle">Sponsors</h3>
+
+    <div class="textwidget">
+        <a href="http://www.maxcdn.com">
+            <img src="/img/maxcdn_logo.png" title="MaxCDN" width="240" />
+        </a>
+    </div>
+</div>
