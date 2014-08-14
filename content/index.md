@@ -16,7 +16,7 @@ Zed is a fully offline-capable, open source, keyboard-focused, text and code edi
 *   Split-view editing
 *   Themes: light and dark themes out of the box and you can easily develop your own using CSS.
 
-[embed]http://www.youtube.com/watch?v=Rb8oQ5XHoLA[/embed]
+<iframe width="560" height="315" src="//www.youtube.com/embed/Rb8oQ5XHoLA" frameborder="0" allowfullscreen></iframe>
 
 Zed is distributed in two editions: [a *Chrome App* and a standalone app][1].
 
