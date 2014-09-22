@@ -24,7 +24,7 @@ Here's how to do it:
 
         You will now be given a URL to copy and paste into the Zed chrome application in the Project Picker under "Edit Remote Files". Paste the URL and press `Return`, you will now get a Zed editor window with all your files available.
 
-    *   Quick option: get your unique zedrem key from the Zed app by (in any editor window) running the `Configuration:Zedrem:Get User Key` command. Then run zedrem as follows:
+    *   Quick option: get your unique zedrem key from the Zed app by (in any editor window) running the `Zedrem:Get User Key` command. Then run zedrem as follows:
 
             ./zedrem -key YOURUSERKEY <dir-to-edit>
 
