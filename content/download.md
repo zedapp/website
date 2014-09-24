@@ -21,3 +21,16 @@ Like Zed? Zed is open source, but [donations are appreciated][8]!
  [6]: http://download.zedapp.org/zed-linux64-v1.0.0.tar.gz
  [7]: http://download.zedapp.org/zed-linux32-v1.0.0.tar.gz
  [8]: /buy
+
+Mac alternative
+===============
+
+If you are using [homebrew](http://brew.sh/) as a package manager, than you can install Zed as simple as: 
+```
+brew cask install zed
+```
+
+if you are missing the cask plugin you can install it with: 
+```
+brew install caskroom/cask/brew-cask
+```
